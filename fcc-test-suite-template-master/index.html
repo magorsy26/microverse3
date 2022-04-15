@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="header">  
+  <head >  
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+      }
+    }
+  .flex-container {
+     display: flex;
+     flex-direction: row;
+  }
+  .flex-container li {
+     margin: 10px;
+  }
+    </style>
   </head>
 
   <body>
-    hello world
+    <header id="header">
+      <img width="50px" height="5%" id="header-img" src="https://assets-global.website-files.com/5dbb30f00775d4350591a4e5/5e2acdb0fce0343dacbfe7d2_Untitled%20design%20(1).png" alt="microverse logo"/>
+      <nav id="nav-bar">
+        <ul class="flex-container">
+          <li><a class="nav-link" href="#mysection">element1</a></li>
+          <li><a class="nav-link" href="#mysection">element2</a></li>
+          <li><a class="nav-link" href="#mysection">element3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <video controls id="video">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+      </video>
+    </div>
+    <form method="post" action="https://www.freecodecamp.org/email-submit" id="form">
+      <div>
+        <input name="email" type="email" id="email" placeholder="email" required/>
+      </div>
+      <div>
+        <button type="submit" id="submit" >Submit</button>
+      </div>
+      
+    </form>
+    <section id="mysection">
+      my section
+    </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
